@@ -1,4 +1,4 @@
-🛡️ Gmail Phishing Checker Extension
+🛡️ Gmail Phishing Checker Extension - PhishWatch
 
 A lightweight Google Chrome extension that protects users from suspicious emails directly inside Gmail — giving real-time insight into potential phishing risks using AI.
 
