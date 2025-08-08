@@ -59,7 +59,7 @@ This extension has been thoroughly tested on Windows and performs reliably in th
 As such, macOS users may encounter untested edge cases or compatibility issues. If you experience any unexpected behavior, feel free to contact me as listed below.
 
 4. File Size Disclaimer:
-This extension's larger than normal file size (roughly 21,881KB) is due to the inclusion of a total of 14 different background images and GIFS that are purchasable in the options tab. 
+This extension's larger than normal file size (roughly 20,243KB) is due to the inclusion of a total of 14 different background images and GIFS that are purchasable in the options tab. 
 
 📮 Contact & Security Reporting
 If you discover any vulnerabilities, accuracy concerns, or have suggestions to improve this application, please reach out directly at grantklein528@gmail.com
