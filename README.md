@@ -4,11 +4,13 @@ A lightweight Google Chrome extension that protects users from suspicious emails
 
 📦 Installation
 - Download the extension .zip file or clone this repo
-- Extract the project folder
+- Extract the project folder ("Phishing-Checker-Extension-main")
 - Go to chrome://extensions in your browser
 - Enable "Developer Mode" in the top right corner
-- Click "Load unpacked" in the top left corner and select the extracted project folder
+- Click "Load unpacked" in the top left corner
+- Very Important: Double click on the Phishing-Checker-Extension-main folder and select (single click) the Phishing-Checker-Extension-main folder that is inside of it
 - You're good to go! Open an email in Gmail and click the extension's button to run
+Please reach out as listed at the bottom if you have any trouble getting started.
 
 ✨ Highlights
 - 🔍 Scans emails with Groq LLM for phishing patterns in real time
