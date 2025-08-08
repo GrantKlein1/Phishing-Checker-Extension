@@ -40,7 +40,6 @@ To access the Options page:
 
 ⚠️ Common Issues and Solutions:
 1. Premature Email Check Trigger: 
-
 If the "Check Email" button is clicked immediately or repeatedly after opening an email — the extension may throw an error in the console like "Error handling response: TypeError etc..."
 This happens because the email body hasn't fully loaded in Gmail's DOM, and the backend can't access the necessary content for analysis.
 Solution:
@@ -50,14 +49,12 @@ Simply refresh the page to ensure the email content is fully loaded before click
 Once refreshed, wait a moment for the email to render, then click "Check Email" again.
 
 2. Server Response Time:
-
 This project is hosted on a free-tier web server, which includes automatic resource management to conserve usage. This can result in:
 - Cold Start Delay: The first request made to the server after a period of inactivity may take up to 1 minute to receive a response. This is because the server needs to spin up from a dormant state.
 - Idle Timeout: After the server becomes active, it remains responsive for 15 minutes. If no further requests are made during that time, the server will spin down again into a dormant state.
 This behavior is expected and helps keep hosting costs low. For best performance during testing or demos, consider sending a preliminary request to "wake" the server.
 
 3. Platform Disclaimer: 
-
 This extension has been thoroughly tested on Windows and performs reliably in that environment. While it is expected to function on macOS, it has not been formally tested on a Mac system.
 As such, macOS users may encounter untested edge cases or compatibility issues. If you experience any unexpected behavior, feel free to contact me as listed below.
 
