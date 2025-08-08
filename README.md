@@ -36,9 +36,9 @@ This extension is designed with security and privacy at its core. Here's how you
 Every time you detect a phishing email, you earn a single Scamite — a small reward for keeping your inbox safe. You can spend these Scamites on the Options page, where you’ll find six unique background themes.
 To access the Options page:
 - Right-click the extension icon in your Chrome toolbar
-- Select “Options”
+- Select “Options” from the dropdown menu 
 
-⚠️ Common Issues and Solutions:
+⚠️ Common Issues, Solutions, and Disclaimers:
 1. Premature Email Check Trigger: 
 If the "Check Email" button is clicked immediately or repeatedly after opening an email — the extension may throw an error in the console like "Error handling response: TypeError etc..."
 This happens because the email body hasn't fully loaded in Gmail's DOM, and the backend can't access the necessary content for analysis.
@@ -58,6 +58,8 @@ This behavior is expected and helps keep hosting costs low. For best performance
 This extension has been thoroughly tested on Windows and performs reliably in that environment. While it is expected to function on macOS, it has not been formally tested on a Mac system.
 As such, macOS users may encounter untested edge cases or compatibility issues. If you experience any unexpected behavior, feel free to contact me as listed below.
 
+4. File Size Disclaimer:
+This extension's larger than normal file size (roughly 21,881KB) is due to the inclusion of a total of 14 different background images and GIFS that are purchasable in the options tab. 
 
 📮 Contact & Security Reporting
 If you discover any vulnerabilities, accuracy concerns, or have suggestions to improve this application, please reach out directly at grantklein528@gmail.com
