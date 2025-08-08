@@ -10,6 +10,7 @@ A lightweight Google Chrome extension that protects users from suspicious emails
 - Click "Load unpacked" in the top left corner
 - Very Important: Double click on the Phishing-Checker-Extension-main folder and select (single click) the Phishing-Checker-Extension-main folder that is inside of it
 - You're good to go! Open an email in Gmail and click the extension's button to run
+
 Please reach out as listed at the bottom if you have any trouble getting started.
 
 ✨ Highlights
