@@ -4,7 +4,7 @@ A lightweight Google Chrome extension that protects users from suspicious emails
 
 📦 Installation
 
-You can either download directly from here or go to this project on the chrome store and download it there instead:     https://chromewebstore.google.com/detail/nocpcbmoahjiedngpffjcdjhcbkoedba?utm_source=item-share-cb
+You can either download directly from here or go to the chrome store and download it there instead:     https://chromewebstore.google.com/detail/nocpcbmoahjiedngpffjcdjhcbkoedba?utm_source=item-share-cb
 - Download the extension .zip file or clone this repo
 - Extract the project folder ("Phishing-Checker-Extension-main")
 - Go to chrome://extensions in your browser
