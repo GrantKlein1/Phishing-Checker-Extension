@@ -12,6 +12,7 @@ You can either download directly from here or go to the chrome store and downloa
 - Click "Load unpacked" in the top left corner
 - Very Important: Double click on the Phishing-Checker-Extension-main folder and select (single click) the Phishing-Checker-Extension-main folder that is inside of it
 - You're good to go! Open an email in Gmail and click the extension's button to run
+
 Please reach out to grantklein528@gmail.com if you have any trouble getting started.
 
 ✨ Highlights
