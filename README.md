@@ -1,67 +1,97 @@
-🛡️ Gmail Phishing Checker Extension - PhishWatch
+# 🛡️ PhishWatch — Gmail Phishing Checker Extension
 
-A lightweight Google Chrome extension that protects users from suspicious emails directly inside Gmail — giving real-time insight into potential phishing risks using AI.
+A lightweight Google Chrome extension that protects users from suspicious emails directly inside Gmail — providing **real-time AI-powered phishing detection**.
 
-📦 Installation
+---
 
-You can either download directly from here or go to the chrome store and download it there instead:     https://chromewebstore.google.com/detail/nocpcbmoahjiedngpffjcdjhcbkoedba?utm_source=item-share-cb
-- Download the extension .zip file or clone this repo
-- Extract the project folder ("Phishing-Checker-Extension-main")
-- Go to chrome://extensions in your browser
-- Enable "Developer Mode" in the top right corner
-- Click "Load unpacked" in the top left corner
-- Very Important: Double click on the Phishing-Checker-Extension-main folder and select (single click) the Phishing-Checker-Extension-main folder that is inside of it
-- You're good to go! Open an email in Gmail and click the extension's button to run
+## 📦 Installation
 
-Please reach out to grantklein528@gmail.com if you have any trouble getting started.
+You can install PhishWatch in two ways:
 
-✨ Highlights
-- 🔍 Scans emails with Groq LLM for phishing patterns in real time
-- 🧠 Smart logic filters out false positives using severity scores
-- 📬 Injects caution banners seamlessly above the email's body
-- 🎨 Features 6 unique background themes for the "Scan" button
-- 🛡️ Focused on user security and zero data retention
+- **Chrome Web Store**: [Download here](https://chromewebstore.google.com/detail/nocpcbmoahjiedngpffjcdjhcbkoedba?utm_source=item-share-cb)  
+- **Manual Installation**:
+  1. Download the extension `.zip` file or clone this repository.
+  2. Extract the project folder (`Phishing-Checker-Extension-main`).
+  3. Open `chrome://extensions` in your browser.
+  4. Enable **Developer Mode** (top-right corner).
+  5. Click **Load unpacked** (top-left corner).
+  6. **Important**: Double-click into the `Phishing-Checker-Extension-main` folder and select the nested folder inside it.
+  7. Done! Open an email in Gmail and click the extension’s button to scan.
 
-❓ How Does It Work? 
-This extension intercepts Gmail emails in the DOM and sends the full body content, including the sender and subject, to an AI-powered phishing detection backend powered by Groq’s LLM. The backend returns either true or false, along with a list of suspicious elements if phishing is detected.
-If phishing is detected:
-- A caution banner is inserted at the top of the email
-- Caution lines highlight the most critical suspicious indicators
-- All decisions are made based on a precise scoring model inside the prompt
+💡 Need help? Contact: **grantklein528@gmail.com**
 
-🔐 User Data & Security: 
-This extension is designed with security and privacy at its core. Here's how your data is handled:
-- 🚫 No data storage: Emails are never saved, logged, or stored by the extension or its backend
-- 📡 Secure transmission: All communication with the Groq LLM backend is encrypted using HTTPS
-- 🎯 Email analysis is local to Gmail context: Only the content of the currently viewed email is processed
-- 🕵️ No personal information is extracted: The extension analyzes only email text for suspicious patterns
-- ✅ No permissions beyond Gmail DOM access: The extension does not request broad data permissions
-- 🔘 Email content is ONLY read into the backend once you click on the “Scan” button
+---
 
-🎨 Customize with the Options Page:
-Every time you detect a phishing email, you earn a single Scamite — a small reward for keeping your inbox safe. You can spend these Scamites on the Options page, where you’ll find six unique background themes.
-To access the Options page:
-- Right-click the extension icon in your Chrome toolbar
-- Select “Options” from the dropdown menu 
+## ✨ Highlights
 
-⚠️ Common Issues, Solutions, and Disclaimers:
-1. Premature Email Check Trigger: 
-If the "Check Email" button is clicked immediately or repeatedly after opening an email — the extension may throw an error in the console like "Error handling response: TypeError etc..."
-This happens because the email body hasn't fully loaded in Gmail's DOM, and the backend can't access the necessary content for analysis.
-Solution:
-Simply refresh the page to ensure the email content is fully loaded before clicking the button:
-- Use the browser's refresh icon (🔄) in the top-left corner
-- Or press Ctrl + R (Windows/Linux) or Cmd + R (Mac)
-Once refreshed, wait a moment for the email to render, then click "Check Email" again.
+- 🔍 **Real-time scanning** with Groq LLM for phishing patterns  
+- 🧠 **Smart severity scoring** to reduce false positives  
+- 📬 **Caution banners** injected seamlessly above suspicious emails  
+- 🎨 **6 unique themes** for the "Scan" button  
+- 🛡️ **Zero data retention** — privacy-first design  
 
-2. Platform Disclaimer: 
-This extension has been thoroughly tested on Windows and performs reliably in that environment. While it is expected to function on macOS, it has not been formally tested on a Mac system.
-As such, macOS users may encounter untested edge cases or compatibility issues. If you experience any unexpected behavior, feel free to contact me as listed below.
+---
 
-3. File Size Disclaimer:
-This extension's larger than normal file size (roughly 20,243KB) is due to the inclusion of a total of 14 different background images and GIFS that are purchasable in the options tab. 
+## ❓ How It Works
 
-📮 Contact & Security Reporting
+PhishWatch intercepts Gmail emails in the DOM and sends the **email body, sender, and subject** to a Groq LLM-powered backend.  
 
-If you discover any vulnerabilities, accuracy concerns, or have suggestions to improve this application, please reach out directly at grantklein528@gmail.com
+- The backend returns a phishing verdict (`true/false`) plus a list of suspicious elements.  
+- If phishing is detected:
+  - A **caution banner** is displayed at the top of the email.  
+  - **Highlighted warnings** mark the most critical suspicious indicators.  
+  - All decisions are based on a **scoring model** embedded in the detection prompt.  
 
+---
+
+## 🔐 User Data & Security
+
+PhishWatch is built with **security and privacy at its core**:
+
+- 🚫 **No data storage** — emails are never saved, logged, or stored  
+- 📡 **Encrypted communication** with the backend (HTTPS)  
+- 🎯 **Local analysis** — only the currently viewed email is processed  
+- 🕵️ **No personal data extraction** — only email text is analyzed  
+- ✅ **Minimal permissions** — limited to Gmail DOM access  
+- 🔘 **On-demand scanning** — email content is only sent when you click **Scan**  
+
+---
+
+## 🎨 Customization
+
+Earn **Scamites** (small rewards) each time you detect a phishing email.  
+Spend Scamites on the **Options Page** to unlock six unique background themes.
+
+To access the Options Page:
+1. Right-click the extension icon in your Chrome toolbar.  
+2. Select **Options**.  
+
+---
+
+## ⚠️ Common Issues & Disclaimers
+
+### 1. Premature Email Check Trigger
+- **Issue**: Clicking "Check Email" too quickly may cause errors like `Error handling response: TypeError...`  
+- **Cause**: Gmail’s DOM hasn’t fully loaded.  
+- **Solution**: Refresh the page before scanning:
+  - Click 🔄 (refresh icon)  
+  - Or press `Ctrl + R` (Windows/Linux) or `Cmd + R` (Mac)  
+  - Wait for the email to fully render, then retry.  
+
+### 2. Platform Disclaimer
+- Tested extensively on **Windows**.  
+- Expected to work on **macOS**, but not formally tested.  
+- Mac users may encounter untested edge cases.  
+
+### 3. File Size Disclaimer
+- File size (~20 MB) is larger than typical extensions due to **14 bundled background images and GIFs** available in the Options tab.  
+
+---
+
+## 📮 Contact & Security Reporting
+
+If you discover vulnerabilities, accuracy issues, or have suggestions for improvement, please reach out:  
+
+📧 **grantklein528@gmail.com**
+
+---
