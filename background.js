@@ -28,7 +28,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
 
   if (message.type === "CHECK_EMAIL") {
-    const url = "https://phishing-checker-o6nk.onrender.com/analyze";
+    const url = "BLANK";
     const payload = JSON.stringify({ email: message.content });
 
     console.log("📡 Sending POST to:", url);
@@ -61,3 +61,4 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
   }
 });
+
